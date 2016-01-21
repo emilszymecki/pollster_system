@@ -15,7 +15,7 @@ $(half_2).addClass('even').addClass('col-md-6');
 
 //Dzielenie pytań parzysty nie parzysty
 var list = $(".page-name-S11 .question").find(".question-row");
-$(list).css("margin-top","0");
+$(list).css("margin-top","0px");
 var all = [];
 var len = Math.floor(list.length/2);
 $(list).each(function(i,el){
@@ -48,6 +48,9 @@ function splitColumn(id, col) {
 		num_col = 4;
 	}
 	if(col === 4){
+		num_col = 3;
+	}
+	if(col === 6){
 		num_col = 2;
 	}
 
